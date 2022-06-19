@@ -1,0 +1,74 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28315.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{84224365-32B6-46AF-85A2-45640E6D7EEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2913483A-3E55-44AE-86BB-88511F372191}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{40A43022-EBA7-4E1D-8BB0-2691E41B5622}"
+	ProjectSection(SolutionItems) = preProject
+		build\Avalonia.props = build\Avalonia.props
+		build\Base.props = build\Base.props
+		build\ReferenceAssemblies.props = build\ReferenceAssemblies.props
+		build\SignAssembly.props = build\SignAssembly.props
+		build\SourceLink.props = build\SourceLink.props
+		build\Avalonia.Xaml.Behaviors.props = build\Avalonia.Xaml.Behaviors.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{721A55B7-C5B0-44E2-803A-56E291C672FE}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{8A0733E3-A184-4BD4-8CB7-478977F3F5FB}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.TXT = LICENSE.TXT
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{0B395300-CACE-470D-81A9-69B922FB79DE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\build\_build.csproj", "{005E7A00-4EA8-43F6-868E-1F8965D39CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.DataTrigger", "src\Avalonia.DataTrigger\Avalonia.DataTrigger.csproj", "{7798DF5A-25BE-465D-A2A9-E58920FEEEFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{005E7A00-4EA8-43F6-868E-1F8965D39CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005E7A00-4EA8-43F6-868E-1F8965D39CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005E7A00-4EA8-43F6-868E-1F8965D39CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005E7A00-4EA8-43F6-868E-1F8965D39CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7798DF5A-25BE-465D-A2A9-E58920FEEEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7798DF5A-25BE-465D-A2A9-E58920FEEEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7798DF5A-25BE-465D-A2A9-E58920FEEEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7798DF5A-25BE-465D-A2A9-E58920FEEEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40A43022-EBA7-4E1D-8BB0-2691E41B5622} = {2913483A-3E55-44AE-86BB-88511F372191}
+		{721A55B7-C5B0-44E2-803A-56E291C672FE} = {2913483A-3E55-44AE-86BB-88511F372191}
+		{0B395300-CACE-470D-81A9-69B922FB79DE} = {2913483A-3E55-44AE-86BB-88511F372191}
+		{005E7A00-4EA8-43F6-868E-1F8965D39CAA} = {2913483A-3E55-44AE-86BB-88511F372191}
+		{7798DF5A-25BE-465D-A2A9-E58920FEEEFF} = {84224365-32B6-46AF-85A2-45640E6D7EEB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E64CD420-15B1-487C-9806-41EBE6DC15A4}
+	EndGlobalSection
+EndGlobal

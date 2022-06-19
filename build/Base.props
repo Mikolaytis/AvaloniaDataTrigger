@@ -1,0 +1,15 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VersionPrefix>0.10.15</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>Sergey Mikolaitis</Authors>
+    <Company>Sergey Mikolaitis</Company>
+    <Copyright>Copyright © Sergey Mikolaitis 2022</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/mikolaytis/AvaloniaDataTrigger</PackageProjectUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>

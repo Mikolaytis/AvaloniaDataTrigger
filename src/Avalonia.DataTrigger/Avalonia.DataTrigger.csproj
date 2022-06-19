@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net461;net5.0;net6.0</TargetFrameworks>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Avalonia.DataTrigger</PackageId>
+    <Description>Adds some kind of DataTrigger support to Avalonia.</Description>
+    <PackageTags>Avalonia;Behavior;Action;Behaviors;Actions;Managed;C#;Interaction;Interactivity;Interactions;Xaml;DataTrigger</PackageTags>
+  </PropertyGroup>
+
+  <Import Project="..\..\build\Base.props" />
+  <Import Project="..\..\build\SourceLink.props" />
+  <Import Project="..\..\build\ReferenceAssemblies.props" />
+  <Import Project="..\..\build\Avalonia.props" />
+  <Import Project="..\..\build\Avalonia.Xaml.Behaviors.props" />
+
+</Project>
