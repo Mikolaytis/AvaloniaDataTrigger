@@ -2,55 +2,41 @@
 
 This library tries to implement DataTrigger and MultiDataTrigger like it works in WPF.
 
-## Building Avalonia DataTrigger
+Nuget is not ready yet. Copy paste the code and use it if you want.
+Samples will come later.
 
-First, clone the repository or download the latest zip.
-```
-git clone https://github.com/mikolaytis/AvaloniaDataTrigger.git
-```
-
-### Build on Windows using script
-
-* [.NET Core](https://www.microsoft.com/net/download?initial-os=windows).
-
-Open up a command-prompt and execute the commands:
-```
-.\build.ps1
+Example
 ```
 
-### Build on Linux using script
+ <Path>
+    <Interaction.Behaviors>
+        <DataTrigger Binding="{CompiledBinding NodeType}"
+                     Default="{x:Static Icons.Tree_Vector}"
+                     Property="Data">
+            <Set When="{x:Static viewModels:NodeIconType.Hyperlink}" Value="{x:Static Icons.Button_Link}" />
+            <Set When="{x:Static viewModels:NodeIconType.Sprite}" Value="{x:Static Icons.Tree_Image}" />
+            <Set When="{x:Static viewModels:NodeIconType.Artboard}" Value="{x:Static Icons.Tree_Artboard}" />
+            <Set When="{x:Static viewModels:NodeIconType.Text}" Value="{x:Static Icons.Tree_Text}" />
+            <Set When="{x:Static viewModels:NodeIconType.Hotspot}" Value="{x:Static Icons.Tree_Hotspot}" />
+            <Set When="{x:Static viewModels:NodeIconType.Slice}" Value="{x:Static Icons.Tree_Slice}" />
+            <Set When="{x:Static viewModels:NodeIconType.Avatar}" Value="{x:Static Icons.Tree_Avatar}" />
+            <Set When="{x:Static viewModels:NodeIconType.LayerStyleOverride}" Value="{x:Static Icons.Tree_LayerStyleOverride}" />
+            <Set When="{x:Static viewModels:NodeIconType.ForeignComponent}" Value="{x:Static Icons.Tree_ForeignComponent}" />
+            <Set When="{x:Static viewModels:NodeIconType.MainComponent}" Value="{CompiledBinding GroupLayout, Converter={x:Static IconConverters.SmartLayout}, ConverterParameter={x:Static Icons.Tree_Component}}" />
+            <Set When="{x:Static viewModels:NodeIconType.Component}" Value="{CompiledBinding ComponentType, Converter={x:Static IconConverters.ComponentType}, ConverterParameter={x:Static Icons.Tree_Instance}}" />
+            <Set When="{x:Static viewModels:NodeIconType.Group}" Value="{CompiledBinding GroupLayout, Converter={x:Static IconConverters.SmartLayout}, ConverterParameter={x:Static Icons.Tree_Group}}" />
+        </DataTrigger>
+        <DataTrigger Binding="{x:True}"
+                     Default="{DynamicResource BlackBrush}"
+                     Property="Fill">
+            <Set When="{CompiledBinding IsHyperlink}" Value="{DynamicResource AccentBlueBrush}" />
+            <Set When="{CompiledBinding IsComponentStyle}" Value="{DynamicResource PinkBrush}" />
+            <Set When="{CompiledBinding IsFontMissing}" Value="{DynamicResource RedBrush}" />
+        </DataTrigger>
+    </Interaction.Behaviors>
+</Path>
 
-* [.NET Core](https://www.microsoft.com/net/download?initial-os=linux).
-
-Open up a terminal prompt and execute the commands:
 ```
-./build.sh
-```
-
-### Build on OSX using script
-
-* [.NET Core](https://www.microsoft.com/net/download?initial-os=macos).
-
-Open up a terminal prompt and execute the commands:
-```
-./build.sh
-```
-
-## NuGet
-
-Avalonia DataTrigger is delivered as a NuGet package.
-
-You can find the packages here [NuGet](https://www.nuget.org/packages/Avalonia.DataTrigger/) and install the package like this:
-
-`Install-Package Avalonia.DataTrigger`
-
-### Package Sources
-
-* https://api.nuget.org/v3/index.json
-
-## Resources
-
-* [GitHub source code repository.](https://github.com/mikolaytis/AvaloniaDataTrigger)
 
 ## License
 
